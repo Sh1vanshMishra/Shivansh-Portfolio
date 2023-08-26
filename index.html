@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Saksham Shrivastava's Portfolio showcasing skills, projects, and expertise in Python, C++, Data Science, Machine Learning, and more.">
+  <meta name="keywords"
+    content="Saksham Shrivastava, Portfolio, Python, C++, Data Science, Machine Learning, Web Development">
+  <meta name="author" content="Saksham Shrivastava">
+  <meta property="og:title" content="Saksham Shrivastava's Portfolio">
+  <meta property="og:description"
+    content="Explore Saksham Shrivastava's portfolio showcasing skills, projects, and expertise.">
+
+  <meta property="og:url" content="https://yourwebsite.com">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="icon" href="download.jpg" type="image/x-icon">
+  <style>
+    /* Rest of your CSS styles */
+
+    /* Scroll Up Image Styles */
+    #scroll-up-img {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s, visibility 0.3s;
+    }
+
+    #scroll-up-img img {
+      width: 100%;
+      height: 100%;
+    }
+
+    #scroll-up-img.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      padding-top: 60px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <style>
+    /* Reset some default styles */
+    /* Reset some default styles */
+
+    /* Basic styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+
+    .menu {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu li {
+      margin-right: 20px;
+    }
+
+    .menu li a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s;
+    }
+
+    .menu li a:hover {
+      color: #ff9800;
+    }
+
+
+
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .about {
+      background-color: #212020;
+      padding: 100px 100;
+    }
+
+    .about-content {
+      max-width: 1500px;
+      margin: 0 auto;
+    }
+
+    .section-heading {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 40px;
+      color: red;
+    }
+
+    .about-details {
+      display: flex;
+      color: white;
+      align-items: center;
+    }
+
+    .about-text {
+      flex: 1;
+      padding-right: 40px;
+    }
+
+    .about-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .about-image {
+      color: yellow;
+      flex: 1;
+      text-align: center;
+    }
+
+    .about-image img {
+      max-width: 100%;
+      border-radius: 50%;
+      box-shadow: 0 0 20px rgba(50, 13, 134, 0.1);
+      transform: scale(1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .about-image img:hover {
+      transform: scale(1.05);
+    }
+
+    .home {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      background-color: #f6f6f6;
+    }
+
+    .home-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 50%;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('home.jpeg');
+      background-repeat: no-repeat;
+      background-size: 300px 100px;
+      background-position: cover;
+      z-index: -1;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    #home {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #video-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: rgb(190, 22, 22);
+    }
+
+    .content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .content p {
+      font-size: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #3498db;
+      color: rgb(80, 19, 134);
+      border: none;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #2980b9;
+    }
+
+    .projects {
+      background-color: #eba70a;
+      padding: 50px 0;
+    }
+
+    .project-cards {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .project-cards::-webkit-scrollbar {
+      display: none;
+    }
+
+    .project-card {
+      flex-shrink: 0;
+      width: calc(100% / 7 - 20px);
+      max-width: 300px;
+      background-color: #040404;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      color: white;
+    }
+
+
+    .project-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .project-title {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+    }
+
+    .project-description {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    .project-link {
+      display: inline-block;
+      padding: 8px 20px;
+      background-color: #007bff;
+      color: #ffffff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .project-link:hover {
+      background-color: #0056b3;
+    }
+
+    .large {
+      height: 400px;
+    }
+
+    .medium {
+      height: 300px;
+    }
+
+    /* Add more classes for different card sizes if needed */
+    #skills {
+      background-color: #231dcf;
+      padding: 50px 0;
+    }
+
+    .skills-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 35px;
+      align-items: center;
+      justify-items: center;
+    }
+
+    .skill {
+      background-color: #18d0e0;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .skill-icon {
+      width: 80px;
+      height: 80px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+
+    .skill-title {
+      font-size: 1.2rem;
+      text-align: center;
+      color: #640c5b;
+      margin-top: 15px;
+    }
+
+    .skill-description {
+      font-size: 0.9rem;
+      text-align: center;
+      color: #666;
+      margin-top: 10px;
+    }
+
+    .expertise {
+      font-size: 0.8rem;
+      color: #360f98;
+      margin-top: 10px;
+    }
+
+    .skill:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .footer {
+      padding: 10px;
+      color: white;
+      background-color: black;
+
+    }
+
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+    #contact {
+
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+
+
+      .icons {
+        display: inline-flex;
+        background-color: rgb(0, 0, 0);
+      }
+
+      .icons a {
+        margin: 0 25px;
+        text-decoration: none;
+        color: #160abe;
+        display: block;
+        position: relative;
+      }
+
+      .icons a .layer {
+        width: 55px;
+        height: 55px;
+        transition: transform 0.3s;
+      }
+
+      .icons a:hover .layer {
+        transform: rotate(-35deg) skew(20deg);
+      }
+
+      .icons a .layer span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border: 1px solid #030e4a;
+        border-radius: 5px;
+        transition: all 0.3s;
+      }
+
+      .icons a .layer span.fab {
+        font-size: 30px;
+        line-height: 55px;
+        text-align: center;
+      }
+
+      .icons a:hover .layer span:nth-child(1) {
+        opacity: 0.2;
+      }
+
+      .icons a:hover .layer span:nth-child(2) {
+        opacity: 0.4;
+        transform: translate(5px, -5px);
+      }
+
+      .icons a:hover .layer span:nth-child(3) {
+        opacity: 0.6;
+        transform: translate(10px, -10px);
+      }
+
+      .icons a:hover .layer span:nth-child(4) {
+        opacity: 0.8;
+        transform: translate(15px, -15px);
+      }
+
+      .icons a:hover .layer span:nth-child(5) {
+        opacity: 1;
+        transform: translate(20px, -20px);
+      }
+
+      .icons a:nth-child(1) .layer span,
+      .icons a:nth-child(1) .text {
+        color: #0f2977;
+        border-color: #2353b4;
+      }
+
+      .icons a:nth-child(2) .layer span,
+      .icons a:nth-child(2) .text {
+        color: #d62099;
+        border-color: #f474d9;
+      }
+
+      .icons a:nth-child(3) .layer span,
+      .icons a:nth-child(3) .text {
+        color: #d331f3;
+        border-color: #bb16d4;
+      }
+
+      .icons a:nth-child(4) .layer span,
+      .icons a:nth-child(4) .text {
+        color: #c81ba0;
+        border-color: #ba1ceb;
+      }
+
+      .icons a:nth-child(5) .layer span,
+      .icons a:nth-child(5) .text {
+        color: #0d67a3;
+        border-color: #5100ff;
+      }
+
+      .icons a:hover:nth-child(1) .layer span {
+        box-shadow: -1px 1px 3px #4267B2;
+      }
+
+      .icons a:hover:nth-child(2) .layer span {
+        box-shadow: -1px 1px 3px #1DA1F2;
+      }
+
+      .icons a:hover:nth-child(3) .layer span {
+        box-shadow: -1px 1px 3px #E1306C;
+      }
+
+      .icons a:hover:nth-child(4) .layer span {
+        box-shadow: -1px 1px 3px #2867B2;
+      }
+
+      .icons a:hover:nth-child(5) .layer span {
+        box-shadow: -1px 1px 3px #ff0000;
+      }
+
+      .icons a .text {
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        opacity: 0;
+        font-weight: 500;
+        transform: translateX(-50%);
+        transition: bottom 0.3s ease, opacity 0.3s ease;
+      }
+
+      .icons a:hover .text {
+        bottom: -35px;
+        opacity: 1;
+      }
+
+    }
+
+    /* Responsive styling */
+    @media (max-width: 768px) {
+      .menu {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .menu li {
+        margin: 10px 0;
+      }
+    }
+
+
+    .home {
+      height: 100vh;
+      width: 100%;
+      background: url("images/background.png") no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 6px;
+      color: #4070f4;
+    }
+
+    .text {
+      text-align: justify;
+      padding: 40px 80px;
+      box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu li {
+      margin: 0 15px;
+    }
+
+    .menu li a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s;
+    }
+
+    .menu li a:hover {
+      color: #ff9800;
+    }
+
+    /* Experience section */
+    .experience-section {
+      padding: 70px 0;
+      background-color: #f5f5f5;
+    }
+
+    .experience-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+
+    .experience-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      margin-bottom: 5px;
+    }
+
+    .card-subtitle {
+      color: #888;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .card-description {
+      font-size: 1rem;
+      color: #555;
+    }
+  </style>
+  <title>Shivansh Mishra Portfolio</title>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RRQH820Z83"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RRQH820Z83');
+  </script>
+
+  <body>
+
+    <header id="home" class="hero">
+
+      <section id="home" class="section">
+        <video autoplay muted loop id="video-bg">
+          <source src="video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+        <div class="content">
+          <h1 style="color: white;">Welcome to my virtual gateway</h1>
+          <h2 style="color: white;">where my journey and skills unfold in pixels and prose.</h2>
+          <a href="#about" class="btn">Visit</a>
+        </div>
+      </section>
+
+    </header>
+    <!-- Rest of your content goes here -->
+
+    <!-- Scroll Up Image -->
+    <div id="scroll-up-img">
+      <img src="homeee.png" alt="Scroll Up">
+    </div>
+
+    <section id="about" class="about">
+
+      <div class="container">
+        <div class="about-content">
+          <h2 class="section-heading"></h2>
+          <div class="about-details">
+            <div class="about-text">
+              <ul>
+                <li>
+                  <p>Hello! I'm Saksham Shrivastava, a final year B Tech student with specialization in Data Science</p>
+                </li>
+                <li>
+                  <p>Passionate about utilizing data to solve intricate business challenges and crafting captivating web
+                    applications</p>
+                </li>
+                <li>
+                  <p>Demonstrated practical application of skills through Python projects</p>
+                </li>
+                <li>
+                  <p>Accomplished frontend developer with expertise in HTML, CSS, and JavaScript</p>
+                </li>
+                <li>
+                  <p>Hands-on experience with the latest data science tools and techniques</p>
+                </li>
+                <li>
+                  <p>Led teams in college minor projects, honing project management and leadership abilities</p>
+                </li>
+                <li>
+                  <p>Enthusiastic cricket player and devoted fan of MS Dhoni</p>
+                </li>
+              </ul>
+            </div>
+            <div class="about-image">
+              <img src="aboooooo.jpg" alt="Profile Image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+
+        <div class="project-cards">
+          <div class="project-card medium">
+            <img src="s.jpg" alt="Project 2">
+            <h2 class="project-title">Skills</h2>
+            <br>
+            <p>Skills and Certifications i have which increase the value of my resume</p>
+          </div>
+
+          <div class="project-card medium">
+            <img src="python.jpg" alt="Project 2">
+            <h3 class="project-title">Python</h3>
+            <a href="https://drive.google.com/file/d/1zlqPKYtN6LGHEiq7mnoEH4BEk8eiUKHd/view?usp=sharing"
+              class="project-link">View Certificate</a>
+          </div>
+          <div class="project-card medium">
+            <img src="c.png" alt="Project 2">
+            <h3 class="project-title">C</h3>
+            <a href="https://drive.google.com/file/d/1ZjyRBYwMsccP48Dk0JU_FSyJCmfk0ICP/view?usp=sharing"
+              class="project-link">View Certificate</a>
+          </div>
+          <div class="project-card medium">
+            <img src="c++.png" alt="Project 2">
+            <h3 class="project-title">C++</h3>
+            <a href="https://drive.google.com/file/d/1ZI7BPrpOy6Y7rc45Pa9BPPbfmcETn72g/view?usp=sharing"
+              class="project-link">View Certificate</a>
+          </div>
+          <div class="project-card medium">
+            <img src="ds.png" alt="Project 2">
+            <br><br><br>
+            <h3 class="project-title">Data Science</h3>
+            <p></p>
+
+            <a href="AWS_Academy_Graduate___AWS_Academy_Data_Engineering_Badge20230805-28-tjetz9.pdf"
+              class="project-link">View Certificate</a>
+          </div>
+          <div class="project-card medium">
+            <img src="ml.png" alt="Project 2">
+            <h3 class="project-title">Machine Learning</h3>
+            <a href="AWS_Academy_Graduate___AWS_Academy_Machine_Learning_Foundations_Badge20230805-28-4b3cdc.pdf"
+              class="project-link">View Certificate</a>
+          </div>
+          <div class="project-card medium">
+            <img src="cloud.png" alt="Project 2">
+            <h3 class="project-title">Cloud Storage</h3>
+            <a href="https://drive.google.com/file/d/1o8I4KOEeIwSAazvP_Y_JKYCNB-dnftcy/view?usp=sharing"
+              class="project-link">View Certificate</a>
+          </div>
+          <div class="project-card medium">
+            <img src="networking.png" alt="Project 2">
+            <h3 class="project-title">Networking</h3>
+            <a href="SAKSHAMSHRIVASTAVA-CCNA 1  Introduc-letter (1).pdf" class="project-link">View Certificate</a>
+          </div>
+          <!-- Add more project cards here -->
+        </div>
+      </div>
+    </section>
+    <section id="experience-section" class="experience-section">
+      <div class="container">
+        <div class="about-image">
+          <img src="experience.jpg" alt="Profile Image">
+        </div>
+        <br>
+        <div class="experience-grid">
+          <div class="experience-card">
+            <h3 class="card-title">Data Science Intern</h3>
+            <p class="card-subtitle">@ Coderscave</p>
+            <p class="card-description">
+            <ul>
+              <li>Performed data analysis and visualization tasks</li>
+              <li>Assisted in developing machine learning models</li>
+              <li>Collaborated with the team to solve real-world challenges</li>
+            </ul>
+            </ul>
+            </p>
+          </div>
+          <div class="experience-card">
+            <h3 class="card-title">Python Developer Intern</h3>
+            <p class="card-subtitle">@ Codeclause</p>
+            <p class="card-description">
+            <ul>
+              <li>Contributed to building Python applications</li>
+              <li>Debugged and enhanced existing codebase</li>
+              <li>Participated in code reviews and discussions</li>
+            </ul>
+            </p>
+          </div>
+          <div class="experience-card">
+            <h3 class="card-title">Student Ambassador</h3>
+            <p class="card-subtitle">@ Prepinsta</p>
+            <p class="card-description">
+            <ul>
+              <li>Represented PrepInsta at college events and workshops</li>
+              <li>Engaged with students to promote educational resources</li>
+              <li>Organized seminars and webinars on technical topics</li>
+            </ul>
+            </p>
+          </div>
+          <div class="experience-card">
+            <h3 class="card-title">Internshala Student Partner</h3>
+            <p class="card-subtitle">@ Internshala</p>
+            <p class="card-description">
+            <ul>
+              <li>Promoted internship opportunities to fellow students</li>
+              <li>Conducted workshops on resume building and interview skills</li>
+              <li>Collaborated with Internshala to enhance campus reach</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="about-image">
+        <img src="pro.jpg" alt="Profile Image">
+      </div>
+      <div class="skills-container">
+        <div class="skill">
+          <div class="skill-icon" style="background-image: url('bro.png');"></div>
+          <div class="skill-title">WebXplorer</div>
+          <div class="skill-description">Developed a feature-rich web browser application using PyQt5, integrating
+            navigation controls and URL entry.Set the default homepage to Google and included a URL update feature for
+            real-time display of the current webpage.</div>
+          <div class="expertise"><a href="Browser.py">Check Code</a></div>
+        </div>
+        <div class="skill">
+          <div class="skill-icon" style="background-image: url('cursor.jpg');"></div>
+          <div class="skill-title">GestureCursor ControlZ</div>
+          <div class="skill-description">This Python project uses computer vision to create a virtual cursor controlled
+            by hand gestures. It utilizes the OpenCV and Mediapipe libraries to detect hand landmarks and their
+            positions in real-time video input. By moving your index finger and thumb, you can control the cursor on the
+            screen and perform actions like clicking.
+          </div>
+          <div class="expertise"><a href="cursor.py">Check Code</a></div>
+        </div>
+        <div class="skill">
+          <div class="skill-icon" style="background-image: url('va.png');"></div>
+          <div class="skill-title">SpeakEZ</div>
+          <div class="skill-description">Developed a robust voice-controlled virtual assistant with advanced speech
+            recognition and web browsing functionality.Integrated email integration and real-time information retrieval
+            from Wikipedia.Implemented personalized greetings based on the time of day for a seamless user experience.
+          </div>
+          <div class="expertise"><a href="voice_assistant.py">Check Code</a></div>
+        </div>
+        <div class="skill">
+          <div class="skill-icon" style="background-image: url('idle.png');"></div>
+          <div class="skill-title"></div>
+          <div class="skill-description">Developed a Python IDE using the tkinter library for writing, editing, and
+            executing Python code within a graphical
+            interface.Implemented features for opening, saving, and running Python files, enabling a seamless
+            development experience.
+          </div>
+
+          <div class="expertise"><a href="Compiler.py">Check Code</a></div>
+          <p>And many more projects.....</p>
+        </div>
+
+        <!-- Repeat the same structure for other skills -->
+      </div>
+
+    </section>
+
+
+    <footer class="footer">
+
+      <section id="contact">
+        <br>
+        <div class="icons">
+
+          <a href="https://github.com/SaksWeb">
+            <div class="layer">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fab fa-github"></span>
+            </div>
+
+            <div class="text">
+              GitHub
+            </div>
+          </a>
+          <br> <br>
+          <a href="https://instagram.com/sakshamshrivastava662?igshid=YmMyMTA2M2Y=">
+            <div class="layer">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fab fa-instagram"></span>
+            </div>
+            <div class="text">
+              Instagram
+            </div>
+          </a>
+          <br>
+          <a href="https://www.linkedin.com/in/saksham-shrivastava-a77786205">
+            <div class="layer">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fab fa-linkedin-in"></span>
+            </div>
+            <div class="text">
+              linkdin
+            </div>
+          </a>
+          <br>
+        </div>
+      </section>
+      <p style="text-align: center;">💓Crafting digital dreams with lines of code and strokes of creativity💓</p>
+      <p style="text-align: center;">&copy; 2023 Saksham Shrivastava.All rights reserved</p>
+      <p style="text-align: center;"> Gmail | sakshamshrivastava61@gmail.com</p>
+
+    </footer>
+
+    <script>
+      // Scroll to section smoothly when clicking on menu links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+      // JavaScript for home section animations
+      document.addEventListener("DOMContentLoaded", function () {
+        const homeText = document.querySelector(".home-text");
+        const homeButtons = document.querySelector(".home-buttons");
+
+        // Initial animation
+        homeText.style.opacity = "0";
+        homeButtons.style.opacity = "0";
+        setTimeout(() => {
+          homeText.style.transition = "opacity 1s";
+          homeButtons.style.transition = "opacity 1s";
+          homeText.style.opacity = "1";
+          homeButtons.style.opacity = "1";
+        }, 300);
+
+        // Hover animation for buttons
+        const buttons = document.querySelectorAll(".home-button");
+        buttons.forEach((button) => {
+          button.addEventListener("mouseover", () => {
+            button.style.transform = "scale(1.05)";
+          });
+
+          button.addEventListener("mouseout", () => {
+            button.style.transform = "scale(1)";
+          });
+        });
+      });
+      // Scroll Up Image Functionality
+      const scrollUpImg = document.getElementById("scroll-up-img");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          scrollUpImg.classList.add("show");
+        } else {
+          scrollUpImg.classList.remove("show");
+        }
+      });
+
+      scrollUpImg.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+
+    </script>
+  </body>
+
+</html>
